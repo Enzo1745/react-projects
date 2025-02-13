@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    background-color: hsla(240, 5%, 25%);
+    color: hsl(0, 0%, 95%);
+}
+
+.instruction{
+    display: inline-block;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.user-input{
+    height: 40px;
+    width: 500px;
+    margin-right: 20px;
+    padding: 0;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 5px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.submit-btn{
+    height: 40px;
+    width: 100px;
+    padding: 0;
+    cursor: pointer;
+    background-color: #4666f5;
+    color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: .1s;
+}
+.submit-btn:hover{
+    background-color: hsl(229, 90%, 55%);
+}
+.submit-btn:active{
+    background-color: hsl(229, 90%, 50%);
+}
+
+.item-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.list-fragment{
+    display: flex;
+}
+.item-list li{
+    list-style: none;
+    margin-right: 10px;
+}
+
+.delete-btn{
+    height: 40px;
+    width: 100px;
+    padding: 0;
+    cursor: pointer;
+    background-color: #ee3f3f;
+    color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: .1s;
+}
+.delete-btn:hover{
+    background-color: hsl(0, 84%, 50%);
+}
+.delete-btn:active{
+    background-color: hsl(0, 84%, 40%);
+}
