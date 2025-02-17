@@ -13,7 +13,12 @@ function App() {
     <>
       <h1>My Modal Project</h1>
       <button className="show-modal-btn" onClick={showModal}>Click me</button>
-      <Modal display={modalDisplay} setDisplay={setModalDisplay}/>
+      
+      {modalDisplay === "block" && (
+      <div className="modal-overlay">
+        <Modal display={modalDisplay} setDisplay={setModalDisplay} />
+      </div>
+    )}
     </>
   );
 }
