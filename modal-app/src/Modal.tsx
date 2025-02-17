@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 interface ModalInterface {
     display: string;
     setDisplay: React.Dispatch<React.SetStateAction<string>>;
@@ -8,6 +10,17 @@ const Modal = ({display, setDisplay}: ModalInterface) => {
     const hideModal = () => {
         setDisplay("none");
     }
+
+    useEffect(() => {
+        const handleKeyDown = (event: KeyboardEvent) => {
+          if (event.key === "Escape") {
+            setDisplay("none");
+          }
+        };
+      
+        document.addEventListener("keydown", handleKeyDown);
+        return () => document.removeEventListener("keydown", handleKeyDown);
+      }, [setDisplay]);
 
     return(
         <>
