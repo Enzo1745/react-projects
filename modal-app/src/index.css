@@ -23,7 +23,6 @@ body{
 }
 
 .modal{
-    visibility: hidden;
     position: absolute;
     top: 5%;
     left: 50%;
@@ -55,5 +54,5 @@ body{
 
 @keyframes MyModalSliding{
     from { top:0%; translate: -50% -100%; }
-    to { visibility: visible; translate: -50%;}
+    to { translate: -50%;}
 }
